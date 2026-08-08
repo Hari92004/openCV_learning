@@ -1,0 +1,18 @@
+# Virtual environments
+.venv/
+.venv311/
+env/
+venv/
+ENV/
+
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+tempCodeRunnerFile.py
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+desktop.ini
