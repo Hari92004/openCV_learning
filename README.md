@@ -3,30 +3,21 @@
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
 [![OpenCV](https://img.shields.io/badge/OpenCV-4.8%2B-green.svg)](https://opencv.org/)
 [![MediaPipe](https://img.shields.io/badge/MediaPipe-Supported-orange.svg)](https://google.github.io/mediapipe/)
-[![PyQt5](https://img.shields.io/badge/PyQt-5-purple.svg)](https://www.riverbankcomputing.com/software/pyqt/)
 
 Welcome to the **OpenCV Learning Repository**! This repository serves as a comprehensive collection of Computer Vision concepts, practical OpenCV modules, object detection scripts, and feature-rich interactive AI applications.
 
 ---
 
-## 🌟 Featured Projects
+## 🌟 Featured Highlights
 
-### 🎨 1. AI Air Canvas (`projects/ai_air_canvas`)
-An interactive, real-time virtual drawing canvas driven by hand-gesture recognition and a sleek UI overlay.
-* **Hand Tracking**: Real-time hand landmark detection using MediaPipe.
-* **Futuristic Glassmorphism UI**: Built with PyQt5 transparent overlays for color picking, brush size adjustments, undo, and canvas clearing.
-* **Geometric & OCR Engines**: Shape recognition and text extraction capabilities integrated into the drawing stream.
-
----
-
-### 💫 2. Sci-Fi Hologram & HUD Displays (`pros-2`)
-Futuristic heads-up displays (HUDs) and holographic interaction modules powered by gesture tracking:
-* **`tony_stark_hud.py`**: Iron Man-style HUD interface featuring interactive UI widgets and gesture control.
-* **`hologram_hand_gesture.py` & `hologram_v2.py`**: Holographic projection simulations controlled by hand coordinates.
+### 💫 1. Sci-Fi Hologram & HUD Displays (`pros-2`)
+Futuristic heads-up displays (HUDs) and holographic interaction modules powered by hand tracking and gesture recognition:
+* **`tony_stark_hud.py`**: Iron Man-style HUD interface featuring interactive UI widgets and gesture-based controls.
+* **`hologram_hand_gesture.py` & `hologram_v2.py`**: Interactive holographic projection simulations driven by MediaPipe hand coordinates.
 
 ---
 
-### 📷 3. Core OpenCV Modules (`OpenCV/`)
+### 📷 2. Core OpenCV Modules (`OpenCV/`)
 Structured practice modules covering fundamental to advanced Computer Vision concepts:
 * **Image Processing**: Image reading, resizing, cropping, color space conversions, rotation, and drawing primitives.
 * **Filtering & Thresholding**: Gaussian Blur, Median Blur, Sharpening, Canny Edge Detection, and Adaptive Thresholding.
@@ -41,19 +32,11 @@ Structured practice modules covering fundamental to advanced Computer Vision con
 
 ```
 OpenCV/
-├── projects/
-│   └── ai_air_canvas/              # AI Air Canvas Application
-│       ├── main.py                 # Main entry point for PyQt5 + MediaPipe Air Canvas
-│       ├── requirements.txt        # Dependencies for AI Air Canvas
-│       └── src/
-│           ├── core/               # Vision worker, gesture tracker & smoothing logic
-│           ├── engine/             # Geometry recognition & OCR engines
-│           └── ui/                 # Glasspanel UI and transparent overlay screens
-│
 ├── pros-2/                         # Futuristic HUD & Hologram Experiments
 │   ├── tony_stark_hud.py           # Interactive Tony Stark HUD interface
 │   ├── hologram_hand_gesture.py    # Hand gesture hologram controller
-│   └── hologram_v2.py              # Advanced holographic display
+│   ├── hologram_v2.py              # Advanced holographic display
+│   └── test_mp.py                  # MediaPipe test script
 │
 ├── OpenCV/                         # Core OpenCV Tutorials & Modules
 │   ├── imageProcessing---/         # Basic image operations (crop, rotate, colors, shapes)
@@ -100,26 +83,31 @@ python --version
 
 3. **Install Dependencies**:
    ```bash
-   pip install -r projects/ai_air_canvas/requirements.txt
+   pip install opencv-python mediapipe numpy
    ```
 
 ---
 
 ## 🎯 How to Run
 
-### Run AI Air Canvas
-```bash
-python projects/ai_air_canvas/main.py
-```
-
 ### Run Tony Stark HUD
 ```bash
 python pros-2/tony_stark_hud.py
 ```
 
+### Run Hologram Hand Gesture Control
+```bash
+python pros-2/hologram_hand_gesture.py
+```
+
 ### Run Face & Feature Detection
 ```bash
 python OpenCV/face_objectDetection--/face_eye_smile_detect.py
+```
+
+### Run Multi-Color Detection
+```bash
+python OpenCV/Projects---/multiColor.py
 ```
 
 ---
@@ -128,9 +116,7 @@ python OpenCV/face_objectDetection--/face_eye_smile_detect.py
 
 * **Language**: Python 3
 * **Computer Vision**: OpenCV (`opencv-python`), MediaPipe
-* **GUI / UI Framework**: PyQt5
 * **Numerical Processing**: NumPy
-* **OCR**: EasyOCR
 
 ---
 

@@ -1,5 +1,0 @@
-opencv-python>=4.8.0
-mediapipe>=0.10.9
-PyQt5>=5.15.10
-numpy>=1.26.0
-easyocr>=1.7.1
